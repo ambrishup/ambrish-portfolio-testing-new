@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ambrish Mishra | Software Engineer Portfolio</title>
+    <meta name="description" content="Professional portfolio of Ambrish Mishra, a Software Engineer specializing in modern Web Development, Frontend, and Backend architectures.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="dark-theme">
+
+    <div class="preloader" id="preloader">
+        <div class="loader"></div>
+    </div>
+
+    <canvas id="particleCanvas"></canvas>
+
+    <header class="header">
+        <nav class="nav-container">
+            <a href="#home" class="logo">AM<span>.</span></a>
+            <ul class="nav-links">
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="nav-actions">
+                <button id="theme-toggle" aria-label="Toggle Theme">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <div class="hamburger" id="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section id="home" class="hero-section">
+        <div class="container hero-grid">
+            <div class="hero-content">
+                <span class="hero-subtitle">Welcome to my professional space</span>
+                <h1 class="hero-title">Hi, I'm <span class="gradient-text">Ambrish Mishra</span></h1>
+                <h2 class="hero-typing">I am a <span id="typing-text"></span><span class="cursor">&nbsp;</span></h2>
+                <p class="hero-description">
+                    Building robust, scalable digital infrastructures and elegant interfaces. Let's engineer something outstanding together.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#contact" class="btn btn-primary">Hire Me</a>
+                    <a href="#" class="btn btn-secondary" id="download-cv">Download CV <i class="fas fa-download"></i></a>
+                </div>
+            </div>
+            <div class="hero-image-container">
+                <div class="hero-image-wrapper">
+                    <div class="profile-placeholder">
+                        <i class="fas fa-user-astronaut"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about-section scroll-reveal">
+        <div class="container">
+            <h2 class="section-title">About <span>Me</span></h2>
+            <div class="about-grid">
+                <div class="about-text-box glass-card">
+                    <h3>Software Engineer</h3>
+                    <p>I am a highly motivated Software Engineer based in Delhi, India, dedicated to developing clean, production-grade architectures. My design philosophy balances system efficiency with smooth UI/UX workflows to maximize user engagement.</p>
+                    <p>With a comprehensive stack encompassing frontend and backend web ecosystems, I bridge the gap between architectural stability and clean styling paradigms.</p>
+                </div>
+                <div class="about-achievements">
+                    <div class="achievement-card glass-card">
+                        <i class="fas fa-cubes"></i>
+                        <h4>100%</h4>
+                        <p>Scalable Deployments</p>
+                    </div>
+                    <div class="achievement-card glass-card">
+                        <i class="fas fa-code-branch"></i>
+                        <h4>Clean</h4>
+                        <p>Code Ethics</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="skills-section scroll-reveal">
+        <div class="container">
+            <h2 class="section-title">Technical <span>Skills</span></h2>
+            <div class="skills-grid glass-card">
+                <div class="skill-item">
+                    <div class="skill-info"><span>HTML5</span><span>95%</span></div>
+                    <div class="progress-bar"><div class="progress" data-progress="95%"></div></div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-info"><span>CSS3</span><span>90%</span></div>
+                    <div class="progress-bar"><div class="progress" data-progress="90%"></div></div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-info"><span>JavaScript</span><span>92%</span></div>
+                    <div class="progress-bar"><div class="progress" data-progress="92%"></div></div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-info"><span>React.js</span><span>88%</span></div>
+                    <div class="progress-bar"><div class="progress" data-progress="88%"></div></div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-info"><span>Node.js</span><span>85%</span></div>
+                    <div class="progress-bar"><div class="progress" data-progress="85%"></div></div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-info"><span>Git & GitHub</span><span>90%</span></div>
+                    <div class="progress-bar"><div class="progress" data-progress="90%"></div></div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-info"><span>Database Technologies</span><span>82%</span></div>
+                    <div class="progress-bar"><div class="progress" data-progress="82%"></div></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="experience" class="experience-section scroll-reveal">
+        <div class="container">
+            <h2 class="section-title">My <span>Experience</span></h2>
+            <div class="timeline">
+                <div class="timeline-item glass-card left">
+                    <div class="timeline-date">2024 - Present</div>
+                    <h3>Senior Software Developer</h3>
+                    <p>Spearheaded robust software architectures, improved platform loading states, and mentored junior development cells to craft production-ready applications.</p>
+                </div>
+                <div class="timeline-item glass-card right">
+                    <div class="timeline-date">2022 - 2024</div>
+                    <h3>Full Stack Engineer</h3>
+                    <p>Designed scale-stable backend models paired with interactive UI screens, managing relational and document databases flawlessly.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="projects-section scroll-reveal">
+        <div class="container">
+            <h2 class="section-title">Featured <span>Projects</span></h2>
+            <div class="projects-grid">
+                <div class="project-card glass-card">
+                    <div class="project-image-placeholder">
+                        <i class="fas fa-layer-group"></i>
+                    </div>
+                    <div class="project-info">
+                        <h3>E-Commerce Core Application</h3>
+                        <div class="tech-tags">
+                            <span>React</span><span>Node.js</span><span>MongoDB</span>
+                        </div>
+                        <p>A cloud-native marketplace module optimizing product dispatch schedules and processing scalable client payloads securely.</p>
+                        <div class="project-links">
+                            <a href="#" class="btn-link">Live Demo <i class="fas fa-external-link-alt"></i></a>
+                            <a href="#" class="btn-link">GitHub <i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card glass-card">
+                    <div class="project-image-placeholder">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <div class="project-info">
+                        <h3>Real-time Analytical Engine</h3>
+                        <div class="tech-tags">
+                            <span>JavaScript</span><span>Websockets</span><span>CSS3</span>
+                        </div>
+                        <p>High-frequency state synchronization metrics platform for visualizing multi-threaded backend analytical inputs.</p>
+                        <div class="project-links">
+                            <a href="#" class="btn-link">Live Demo <i class="fas fa-external-link-alt"></i></a>
+                            <a href="#" class="btn-link">GitHub <i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="services-section scroll-reveal">
+        <div class="container">
+            <h2 class="section-title">My <span>Services</span></h2>
+            <div class="services-grid">
+                <div class="service-card glass-card">
+                    <div class="service-icon"><i class="fas fa-globe"></i></div>
+                    <h3>Web Development</h3>
+                    <p>Formulating compliant, responsive structural applications configured for exceptional organic discoverability.</p>
+                </div>
+                <div class="service-card glass-card">
+                    <div class="service-icon"><i class="fas fa-laptop-code"></i></div>
+                    <h3>Frontend Development</h3>
+                    <p>Transforming complex user interaction blueprints into vivid web components using functional design patterns.</p>
+                </div>
+                <div class="service-card glass-card">
+                    <div class="service-icon"><i class="fas fa-server"></i></div>
+                    <h3>Backend Development</h3>
+                    <p>Assembling robust API layers, schema configurations, and processing logical requests under enterprise-tier encryption.</p>
+                </div>
+                <div class="service-card glass-card">
+                    <div class="service-icon"><i class="fas fa-network-wired"></i></div>
+                    <h3>Full Stack Development</h3>
+                    <p>Providing seamless technical synergy by managing both modern client UI nodes and data storage infrastructures.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact-section scroll-reveal">
+        <div class="container">
+            <h2 class="section-title">Get In <span>Touch</span></h2>
+            <div class="contact-grid">
+                <div class="contact-info glass-card">
+                    <h3>Contact Information</h3>
+                    <div class="info-item">
+                        <i class="fas fa-phone-alt"></i>
+                        <div>
+                            <h5>Phone</h5>
+                            <p>+91 8299360816</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h5>Location</h5>
+                            <p>Delhi, India</p>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-x-twitter"></i></a>
+                    </div>
+                </div>
+                <form class="contact-form glass-card" id="contactForm">
+                    <h3>Send Message</h3>
+                    <div class="input-group">
+                        <input type="text" required placeholder=" ">
+                        <label>Your Name</label>
+                    </div>
+                    <div class="input-group">
+                        <input type="email" required placeholder=" ">
+                        <label>Your Email</label>
+                    </div>
+                    <div class="input-group">
+                        <textarea required rows="5" placeholder=" "></textarea>
+                        <label>Your Message</label>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit Form</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container footer-content">
+            <div class="footer-brand">
+                <a href="#home" class="logo">AM<span>.</span></a>
+                <p>Engineering premium client-server application spaces with structural excellence.</p>
+            </div>
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Ambrish Mishra. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <button id="scrollToTop" aria-label="Scroll to Top"><i class="fas fa-arrow-up"></i></button>
+
+    <script src="script.js"></script>
+</body>
+</html>
